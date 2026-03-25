@@ -30,7 +30,7 @@ export default function AdministrativoInicio() {
         queryKey: ['getImportacionCountByProyecto'],
         queryFn: () => getImportacionCountByProyecto()
     });
-    //feedback
+    //effects
     useEffect(() => {
         if (asistencia.isError) showWarning('Error al cargar asistencia');
         if (importaciones.isError) showWarning('Error al cargar total de importaciones pendientes');
